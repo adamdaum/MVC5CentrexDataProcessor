@@ -1,0 +1,80 @@
+﻿@model MVC5CentrexDataProcessor.Models.Record10
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Record10</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Record_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Record_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Billing_Telephone_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Billing_Telephone_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number_of_Calls)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number_of_Calls)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number_of_Seconds)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number_of_Seconds)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Invoice_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Invoice_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone_Number)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

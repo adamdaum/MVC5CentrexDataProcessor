@@ -1,0 +1,74 @@
+﻿@model MVC5CentrexDataProcessor.Models.Record10
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Record10</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Record_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Record_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Billing_Telephone_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Billing_Telephone_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number_of_Calls)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number_of_Calls)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number_of_Seconds)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number_of_Seconds)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Invoice_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Invoice_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone_Number)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

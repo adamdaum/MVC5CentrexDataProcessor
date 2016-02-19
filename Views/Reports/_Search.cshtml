@@ -1,0 +1,36 @@
+﻿<h2>Centrex Data Report</h2>
+
+@using (Html.BeginForm("Index", "Reports", FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+{
+    @Html.AntiForgeryToken()
+    <h4>Search</h4>
+    <br/>
+    <br/>
+
+    <div class="form-group">
+        @Html.Label("Record Type:")
+        <select id="recordType" name="recordType" class="form-control">
+            <option value="07">07</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        @Html.Label("Phone Number:")
+        <input type="text" class="form-control" name="searchString" value=""/>
+    </div>  
+    
+   
+
+  
+    <div class="form-group">
+        <input type="submit" name="Search" value="Search" class="btn btn-default"/>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><br/>
+        </div>
+    </div>
+}

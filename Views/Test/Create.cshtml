@@ -1,0 +1,84 @@
+﻿@model MVC5CentrexDataProcessor.Models.Record10
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Record10</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Record_Type, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Record_Type)
+                @Html.ValidationMessageFor(model => model.Record_Type)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Billing_Telephone_Number, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Billing_Telephone_Number)
+                @Html.ValidationMessageFor(model => model.Billing_Telephone_Number)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Number_of_Calls, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Number_of_Calls)
+                @Html.ValidationMessageFor(model => model.Number_of_Calls)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Number_of_Seconds, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Number_of_Seconds)
+                @Html.ValidationMessageFor(model => model.Number_of_Seconds)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Amount, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Amount)
+                @Html.ValidationMessageFor(model => model.Amount)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Invoice_Number, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Invoice_Number)
+                @Html.ValidationMessageFor(model => model.Invoice_Number)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telephone_Number, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Telephone_Number)
+                @Html.ValidationMessageFor(model => model.Telephone_Number)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

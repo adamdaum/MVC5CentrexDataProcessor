@@ -1,0 +1,78 @@
+﻿@model IEnumerable<MVC5CentrexDataProcessor.Models.Record09>
+
+@{
+    ViewBag.Title = "ATT Record 09 Report";  
+}
+
+@{
+
+    Html.RenderPartial("_Search");
+
+}
+
+<h2>Centrex Record 09 Report</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Record_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Billing_Telephone_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Call_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Call_Cost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Invoice_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telephone_Number)
+        </th>
+        <th></th>
+    </tr>
+
+
+@if (Model != null)
+{
+
+    foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Record_Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Billing_Telephone_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number_of_Calls)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number_of_Seconds)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Invoice_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telephone_Number)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new {id = item.Id})
+            </td>
+        </tr>
+    }
+}
+
+</table>
+

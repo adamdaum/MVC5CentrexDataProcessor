@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CentrexModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Record09">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Record Type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Billing Telephone Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Call Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Call Time" Type="nvarchar" MaxLength="50" />
+    <Property Name="Call Duration Seconds" Type="varchar" MaxLength="50" />
+    <Property Name="Call Cost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="From Number" Type="varchar" MaxLength="50" />
+    <Property Name="From City" Type="nvarchar" MaxLength="50" />
+    <Property Name="To Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="To City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Call Type" Type="varchar" MaxLength="50" />
+    <Property Name="Usage Type" Type="varchar" MaxLength="50" />
+    <Property Name="Auth Code" Type="varchar" MaxLength="50" />
+    <Property Name="Call Count" Type="varchar" MaxLength="50" />
+    <Property Name="Carrier" Type="varchar" MaxLength="50" />
+    <Property Name="Telephone Number" Type="varchar" MaxLength="50" />
+    <Property Name="Provider Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rate Period" Type="varchar" MaxLength="50" />
+    <Property Name="From State" Type="nvarchar" MaxLength="50" />
+    <Property Name="To State" Type="nvarchar" MaxLength="50" />
+    <Property Name="Invoice Number" Type="varchar" MaxLength="50" />
+    <Property Name="Call Duration Minutes" Type="varchar" MaxLength="50" />
+    <Property Name="Rerated Call Cost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Call Usage Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Source" Type="nvarchar" MaxLength="50" />
+    <Property Name="Approved Rate" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Record10">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Record Type" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Billing Telephone Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Number of Calls" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Number of Seconds" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Invoice Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telephone Number" Type="varchar" MaxLength="50" />
+    <Property Name="Rerated Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Approved Rate" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="CentrexModelStoreContainer">
+    <EntitySet Name="Record09" EntityType="Self.Record09" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Record10" EntityType="Self.Record10" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

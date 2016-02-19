@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CentrexModelStoreContainer" CdmEntityContainer="CentrexEntities">
+    <EntitySetMapping Name="Record09">
+      <EntityTypeMapping TypeName="CentrexModel.Record09">
+        <MappingFragment StoreEntitySet="Record09">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Record_Type" ColumnName="Record Type" />
+          <ScalarProperty Name="Billing_Telephone_Number" ColumnName="Billing Telephone Number" />
+          <ScalarProperty Name="Call_Date" ColumnName="Call Date" />
+          <ScalarProperty Name="Call_Time" ColumnName="Call Time" />
+          <ScalarProperty Name="Call_Duration_Seconds" ColumnName="Call Duration Seconds" />
+          <ScalarProperty Name="Call_Cost" ColumnName="Call Cost" />
+          <ScalarProperty Name="From_Number" ColumnName="From Number" />
+          <ScalarProperty Name="From_City" ColumnName="From City" />
+          <ScalarProperty Name="To_Number" ColumnName="To Number" />
+          <ScalarProperty Name="To_City" ColumnName="To City" />
+          <ScalarProperty Name="Call_Type" ColumnName="Call Type" />
+          <ScalarProperty Name="Usage_Type" ColumnName="Usage Type" />
+          <ScalarProperty Name="Auth_Code" ColumnName="Auth Code" />
+          <ScalarProperty Name="Call_Count" ColumnName="Call Count" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+          <ScalarProperty Name="Telephone_Number" ColumnName="Telephone Number" />
+          <ScalarProperty Name="Provider_Name" ColumnName="Provider Name" />
+          <ScalarProperty Name="Rate_Period" ColumnName="Rate Period" />
+          <ScalarProperty Name="From_State" ColumnName="From State" />
+          <ScalarProperty Name="To_State" ColumnName="To State" />
+          <ScalarProperty Name="Invoice_Number" ColumnName="Invoice Number" />
+          <ScalarProperty Name="Call_Duration_Minutes" ColumnName="Call Duration Minutes" />
+          <ScalarProperty Name="Rerated_Call_Cost" ColumnName="Rerated Call Cost" />
+          <ScalarProperty Name="Call_Usage_Type" ColumnName="Call Usage Type" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Approved_Rate" ColumnName="Approved Rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Record10">
+      <EntityTypeMapping TypeName="CentrexModel.Record10">
+        <MappingFragment StoreEntitySet="Record10">
+          <ScalarProperty Name="Approved_Rate" ColumnName="Approved Rate" />
+          <ScalarProperty Name="Rerated_Amount" ColumnName="Rerated Amount" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Record_Type" ColumnName="Record Type" />
+          <ScalarProperty Name="Billing_Telephone_Number" ColumnName="Billing Telephone Number" />
+          <ScalarProperty Name="Number_of_Calls" ColumnName="Number of Calls" />
+          <ScalarProperty Name="Number_of_Seconds" ColumnName="Number of Seconds" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Invoice_Number" ColumnName="Invoice Number" />
+          <ScalarProperty Name="Telephone_Number" ColumnName="Telephone Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
